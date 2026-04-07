@@ -1,0 +1,164 @@
+/* animation
+--------------------------------------------- */
+
+/* 拡大 */
+@keyframes zoom_obj {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(var(--zoom));
+	}
+}
+
+/* 明度 */
+@keyframes brightness_obj {
+	0% {
+		filter: brightness(100%);
+	}
+	100% {
+		filter: brightness(var(--brightness));
+	}
+}
+
+/* 移動 */
+@keyframes move_obj {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(var(--moveX), var(--moveY));
+	}
+}
+
+/* 不透明度 */
+@keyframes opacity_obj {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: var(--opacity);
+	}
+}
+
+/* ラベル登場 */
+.anim_label_slide_nlp {
+	animation-name: slide_in_right;
+	animation-duration: .7s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-fill-mode: both;
+}
+
+@keyframes slide_in_right {
+	0% {
+		transform: translateX(160px);
+		opacity: 0;
+	}
+	80% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+/* メニュー画面のパネル登場 */
+.anim_bounce {
+	animation-name: panel_bounce;
+	animation-duration: .3s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+@keyframes panel_bounce {
+	0% {
+		transform: scale(0.9);
+		transform: translateY(200px);
+	}
+	70% {
+		transform: scale(1.02);
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: scale(1);
+		transform: translateY(0);
+	}
+}
+
+/* 左向きの矢印 */
+.anim_arrow_left_lp:hover {
+	--moveX: -8px;
+	--moveY:  0px;
+	--brightness: 130%;
+	animation-name: move_obj, brightness_obj;
+	animation-duration: .2s, .6s;
+	animation-timing-function: ease-in-out, ease;
+	animation-delay: 0;
+	animation-iteration-count: 1, infinite;
+	animation-direction: normal, alternate;
+	animation-fill-mode: forwards, both;
+}
+
+/* 右向きの矢印 */
+.anim_arrow_right_lp:hover {
+	--moveX: 8px;
+	--moveY: 0px;
+	--brightness: 130%;
+	animation-name: move_obj, brightness_obj;
+	animation-duration: .2s, .6s;
+	animation-timing-function: ease-in-out, ease;
+	animation-delay: 0;
+	animation-iteration-count: 1, infinite;
+	animation-direction: normal, alternate;
+	animation-fill-mode: forwards, both;
+}
+
+/* メニューボタン、戻るボタン */
+.menu_save:hover,
+.menu_load:hover,
+.menu_config:hover,
+.menu_back_title:hover,
+.menu_close:hover,
+.back_btn:hover {
+	--zoom: 1.03;
+	animation-name: zoom_obj;
+	animation-duration: .2s;
+	animation-timing-function: cubic-bezier(0.20, 1, 0.5, 1);
+	animation-delay: 0;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+/* システムボタン */
+.role_button {
+	--zoom: 1;
+	--brightness: 100%;
+	transform: scale(var(--zoom));
+	filter: brightness(var(--brightness));
+	transition: .1s;
+}
+
+.role_button_blink {
+	animation: blink .5s infinite alternate;
+}
+@keyframes blink {
+	from { filter: brightness(100%); }
+	to   { filter: brightness(120%); }
+}
+
+/* セーブスロット */
+.save_list_item:hover {
+	--zoom: 1.03;
+	background: none;
+	animation-name: zoom_obj;
+	animation-duration: .2s;
+	animation-timing-function: ease-out;
+	animation-delay: 0;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}

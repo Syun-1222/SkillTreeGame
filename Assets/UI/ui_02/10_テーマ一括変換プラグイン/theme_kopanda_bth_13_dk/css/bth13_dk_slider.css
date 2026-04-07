@@ -1,0 +1,77 @@
+/* バーの幅 */
+.noUi-horizontal {
+  height: 3px;
+}
+
+/* ハンドルのサイズと位置 */
+.noUi-horizontal .noUi-handle {
+  width :  44px;
+  height:  44px;
+  right : -22px;
+  top   : -21px;
+}
+
+/* background-color 背景色 */
+.noUi-target {
+  background: #4C3526;
+  border-radius: 1px;
+  border: initial;
+  box-shadow: initial;
+}
+
+.noUi-connects {
+  border-radius: none;
+}
+
+/* コネクタ色 */
+.noUi-connect {
+  background: #C2894B;
+}
+
+/* ハンドルのデザイン */
+.noUi-handle {
+  background: none;
+  background-image: url(slider_handle.png);
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+/* ハンドルアクティブ時の装飾 */
+.noUi-active {
+  background-image: url(slider_handle2.png);
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: initial;
+  width: initial;
+  background: initial;
+  left: initial;
+  top: initial;
+}
+
+/* ツールチップ */
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: none;
+  border-radius: 100vh;
+  background: #1D1B1B;
+  color: #FFFFFF;
+  padding: 0.25em 1em;
+  font-size: 10px;
+  text-align: center;
+  white-space: nowrap
+}
+
+/* ツールチップの表示位置 */
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 100%
+}

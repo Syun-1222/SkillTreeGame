@@ -1,0 +1,2938 @@
+fileFormatVersion: 2
+guid: 654c7a65a54120a4d932ea5bce4456c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1020529116145130889
+    second: nextpage_ss_0
+  - first:
+      213: 5640545624955603300
+    second: nextpage_ss_1
+  - first:
+      213: -4765671275293013015
+    second: nextpage_ss_2
+  - first:
+      213: -699406603824745746
+    second: nextpage_ss_3
+  - first:
+      213: -8557041976464779095
+    second: nextpage_ss_4
+  - first:
+      213: 6817549011372553136
+    second: nextpage_ss_5
+  - first:
+      213: 9019465147793701666
+    second: nextpage_ss_6
+  - first:
+      213: -7797685022818382030
+    second: nextpage_ss_7
+  - first:
+      213: -9187970712084082189
+    second: nextpage_ss_8
+  - first:
+      213: -262960059423136400
+    second: nextpage_ss_9
+  - first:
+      213: -7890271181868966264
+    second: nextpage_ss_10
+  - first:
+      213: 5707914367268369250
+    second: nextpage_ss_11
+  - first:
+      213: -4084196405922575108
+    second: nextpage_ss_12
+  - first:
+      213: -5652428968802795832
+    second: nextpage_ss_13
+  - first:
+      213: -3859659733326722056
+    second: nextpage_ss_14
+  - first:
+      213: 6021681124224715259
+    second: nextpage_ss_15
+  - first:
+      213: 1708117579259428179
+    second: nextpage_ss_16
+  - first:
+      213: -8219923287428723592
+    second: nextpage_ss_17
+  - first:
+      213: 7810172182118680368
+    second: nextpage_ss_18
+  - first:
+      213: 4828085240306216800
+    second: nextpage_ss_19
+  - first:
+      213: 8864922697924186743
+    second: nextpage_ss_20
+  - first:
+      213: 7116270042043860703
+    second: nextpage_ss_21
+  - first:
+      213: -5268852037807385105
+    second: nextpage_ss_22
+  - first:
+      213: -6005945505767403084
+    second: nextpage_ss_23
+  - first:
+      213: 1527164343337314011
+    second: nextpage_ss_24
+  - first:
+      213: 8914867341438311731
+    second: nextpage_ss_25
+  - first:
+      213: 9133096321463018949
+    second: nextpage_ss_26
+  - first:
+      213: 1275914508690017783
+    second: nextpage_ss_27
+  - first:
+      213: -4442272508496336299
+    second: nextpage_ss_28
+  - first:
+      213: 3051967379622833955
+    second: nextpage_ss_29
+  - first:
+      213: -5822811056964772271
+    second: nextpage_ss_30
+  - first:
+      213: 3443942753490652473
+    second: nextpage_ss_31
+  - first:
+      213: -1337147563216872134
+    second: nextpage_ss_32
+  - first:
+      213: -3886107400489976271
+    second: nextpage_ss_33
+  - first:
+      213: -8589102323757752889
+    second: nextpage_ss_34
+  - first:
+      213: 1338863690640357003
+    second: nextpage_ss_35
+  - first:
+      213: -3020597035298275048
+    second: nextpage_ss_36
+  - first:
+      213: -8319123763411610956
+    second: nextpage_ss_37
+  - first:
+      213: 6989997647680925983
+    second: nextpage_ss_38
+  - first:
+      213: 3885243315831886878
+    second: nextpage_ss_39
+  - first:
+      213: 8966200532159966768
+    second: nextpage_ss_40
+  - first:
+      213: -977771545907726249
+    second: nextpage_ss_41
+  - first:
+      213: 3080462801356079054
+    second: nextpage_ss_42
+  - first:
+      213: -317717036912832
+    second: nextpage_ss_43
+  - first:
+      213: 3790173473406469319
+    second: nextpage_ss_44
+  - first:
+      213: -1275748746911091720
+    second: nextpage_ss_45
+  - first:
+      213: 3079457145804268986
+    second: nextpage_ss_46
+  - first:
+      213: 8998564640535927688
+    second: nextpage_ss_47
+  - first:
+      213: -3311820649406490348
+    second: nextpage_ss_48
+  - first:
+      213: 3832127622583745319
+    second: nextpage_ss_49
+  - first:
+      213: -4190601171661356949
+    second: nextpage_ss_50
+  - first:
+      213: -5548840943146291810
+    second: nextpage_ss_51
+  - first:
+      213: -4665594696324269028
+    second: nextpage_ss_52
+  - first:
+      213: 4585660662991515850
+    second: nextpage_ss_53
+  - first:
+      213: -5449007094060945759
+    second: nextpage_ss_54
+  - first:
+      213: -3166865328568619854
+    second: nextpage_ss_55
+  - first:
+      213: -4975962437752531370
+    second: nextpage_ss_56
+  - first:
+      213: -8633866135207900524
+    second: nextpage_ss_57
+  - first:
+      213: 4075912824127897489
+    second: nextpage_ss_58
+  - first:
+      213: -1223171055026754650
+    second: nextpage_ss_59
+  - first:
+      213: -6721836140105066939
+    second: nextpage_ss_60
+  - first:
+      213: -9151232147186398755
+    second: nextpage_ss_61
+  - first:
+      213: 103146886554199430
+    second: nextpage_ss_62
+  - first:
+      213: -353448378207232227
+    second: nextpage_ss_63
+  - first:
+      213: -8767044301205605692
+    second: nextpage_ss_64
+  - first:
+      213: -4197092174159373027
+    second: nextpage_ss_65
+  - first:
+      213: -8806291464168430464
+    second: nextpage_ss_66
+  - first:
+      213: -8997346843706241976
+    second: nextpage_ss_67
+  - first:
+      213: -4775575848322311119
+    second: nextpage_ss_68
+  - first:
+      213: -7478339248573865573
+    second: nextpage_ss_69
+  - first:
+      213: 4810234336557374993
+    second: nextpage_ss_70
+  - first:
+      213: 1144462828716692310
+    second: nextpage_ss_71
+  - first:
+      213: 4225793610525212527
+    second: nextpage_ss_72
+  - first:
+      213: -8753541870213462671
+    second: nextpage_ss_73
+  - first:
+      213: -462060420833443622
+    second: nextpage_ss_74
+  - first:
+      213: -1198305348331688330
+    second: nextpage_ss_75
+  - first:
+      213: -6301946036958319493
+    second: nextpage_ss_76
+  - first:
+      213: 3404893937541187315
+    second: nextpage_ss_77
+  - first:
+      213: -2504704552913577399
+    second: nextpage_ss_78
+  - first:
+      213: -4455797274248618573
+    second: nextpage_ss_79
+  - first:
+      213: 3599887865752968480
+    second: nextpage_ss_80
+  - first:
+      213: -1241638838156607464
+    second: nextpage_ss_81
+  - first:
+      213: 1360362850910418588
+    second: nextpage_ss_82
+  - first:
+      213: 5716065349166671051
+    second: nextpage_ss_83
+  - first:
+      213: -3694686186435564841
+    second: nextpage_ss_84
+  - first:
+      213: 7421061203613097433
+    second: nextpage_ss_85
+  - first:
+      213: -6892741498321989641
+    second: nextpage_ss_86
+  - first:
+      213: 8836286608137327154
+    second: nextpage_ss_87
+  - first:
+      213: 8636639651400607103
+    second: nextpage_ss_88
+  - first:
+      213: 582282249292259438
+    second: nextpage_ss_89
+  - first:
+      213: -2248136215398837502
+    second: nextpage_ss_90
+  - first:
+      213: -8606660434261928959
+    second: nextpage_ss_91
+  - first:
+      213: -4177909728378898097
+    second: nextpage_ss_92
+  - first:
+      213: -7377270965444258349
+    second: nextpage_ss_93
+  - first:
+      213: 3674311860881469200
+    second: nextpage_ss_94
+  - first:
+      213: 2222191117485075154
+    second: nextpage_ss_95
+  - first:
+      213: -9139676439659707906
+    second: nextpage_ss_96
+  - first:
+      213: 155967605913236633
+    second: nextpage_ss_97
+  - first:
+      213: 2988909853327861871
+    second: nextpage_ss_98
+  - first:
+      213: 3299093142065771401
+    second: nextpage_ss_99
+  - first:
+      213: 8547183025093197895
+    second: nextpage_ss_100
+  - first:
+      213: -3529763041992148817
+    second: nextpage_ss_101
+  - first:
+      213: -1783178897116769472
+    second: nextpage_ss_102
+  - first:
+      213: 7173263838701257931
+    second: nextpage_ss_103
+  - first:
+      213: -7184819483480880605
+    second: nextpage_ss_104
+  - first:
+      213: -1460298451111070369
+    second: nextpage_ss_105
+  - first:
+      213: 8448382183416369556
+    second: nextpage_ss_106
+  - first:
+      213: 4201904491855737602
+    second: nextpage_ss_107
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nextpage_ss_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d16caf2d5a92e00800000000000000
+      internalID: 1020529116145130889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 161
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469ccda6c5e374e40800000000000000
+      internalID: 5640545624955603300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 170
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb80e7893fecddb0800000000000000
+      internalID: -4765671275293013015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 161
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2b67146653b46f0800000000000000
+      internalID: -699406603824745746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 170
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8d5b8d8a74f3980800000000000000
+      internalID: -8557041976464779095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 161
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b33da574bccc9e50800000000000000
+      internalID: 6817549011372553136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 170
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b7246c3c39b2d70800000000000000
+      internalID: 9019465147793701666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 161
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fc68029ce09c390800000000000000
+      internalID: -7797685022818382030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 170
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1198b3155cd7080800000000000000
+      internalID: -9187970712084082189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 162
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075e7fb1837c95cf0800000000000000
+      internalID: -262960059423136400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 170
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ed23f1a20208290800000000000000
+      internalID: -7890271181868966264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 164
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263316d00e5963f40800000000000000
+      internalID: 5707914367268369250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 170
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcce0002050257c0800000000000000
+      internalID: -4084196405922575108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 165
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ceb16cfcc98e81b0800000000000000
+      internalID: -5652428968802795832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_14
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 170
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb8e210cebbf6ac0800000000000000
+      internalID: -3859659733326722056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 167
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9c618041f419350800000000000000
+      internalID: 6021681124224715259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_16
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 170
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35dbb5a63e374b710800000000000000
+      internalID: 1708117579259428179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 170
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c89d33257fced80800000000000000
+      internalID: -8219923287428723592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 170
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03742d5383e436c60800000000000000
+      internalID: 7810172182118680368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 138
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f22cd12fdc00340800000000000000
+      internalID: 4828085240306216800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7729113b938860b70800000000000000
+      internalID: 8864922697924186743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 136
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd647cd46e112c260800000000000000
+      internalID: 7116270042043860703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5d568bcf641e6b0800000000000000
+      internalID: -5268852037807385105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_23
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 131
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b15164226896aca0800000000000000
+      internalID: -6005945505767403084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_24
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6634601e3913510800000000000000
+      internalID: 1527164343337314011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_25
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 128
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d59223d98f7bb70800000000000000
+      internalID: 8914867341438311731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_26
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5ea3417b64fbe70800000000000000
+      internalID: 9133096321463018949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_27
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 128
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd4c3e4c75f4b110800000000000000
+      internalID: 1275914508690017783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55aa79f80b0e952c0800000000000000
+      internalID: -4442272508496336299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_29
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 129
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32faf786924ca5a20800000000000000
+      internalID: 3051967379622833955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ed56bb138313fa0800000000000000
+      internalID: -5822811056964772271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 130
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d479000b75bcf20800000000000000
+      internalID: 3443942753490652473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_32
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 138
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ddd22306f717de0800000000000000
+      internalID: -1337147563216872134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_33
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 133
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e37c2a8e5c11ac0800000000000000
+      internalID: -3886107400489976271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_34
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 136
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cddfec81f06dc880800000000000000
+      internalID: -8589102323757752889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_35
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 138
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86794bde69949210800000000000000
+      internalID: 1338863690640357003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 106
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811c27d000fa416d0800000000000000
+      internalID: -3020597035298275048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 106
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2175783098c8c80800000000000000
+      internalID: -8319123763411610956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 102
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1176d273d5710160800000000000000
+      internalID: 6989997647680925983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_39
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 99
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14de1af5382be530800000000000000
+      internalID: 3885243315831886878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_40
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 97
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e205801e75e6c70800000000000000
+      internalID: 8966200532159966768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_41
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7587fae95f14e62f0800000000000000
+      internalID: -977771545907726249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf32aac89000ca20800000000000000
+      internalID: 3080462801356079054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_43
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 96
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f20ecb90fdefff0800000000000000
+      internalID: -317717036912832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_44
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 106
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4408f51b6699430800000000000000
+      internalID: 3790173473406469319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_45
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 96
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3f6bd1641ab4ee0800000000000000
+      internalID: -1275748746911091720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 106
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5a3bc55fd6cba20800000000000000
+      internalID: 3079457145804268986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_47
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 96
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bd8873dd251ec70800000000000000
+      internalID: 8998564640535927688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41992588aac0a02d0800000000000000
+      internalID: -3311820649406490348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_49
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bf01ee4c37e2530800000000000000
+      internalID: 3832127622583745319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b600ac7ef6ef7d5c0800000000000000
+      internalID: -4190601171661356949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_51
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d2f9caf8e8ef2b0800000000000000
+      internalID: -5548840943146291810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_52
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c35a3d75a704fb0800000000000000
+      internalID: -4665594696324269028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_53
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0771eb31a83af30800000000000000
+      internalID: 4585660662991515850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_54
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aee9e30bec3164b0800000000000000
+      internalID: -5449007094060945759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_55
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcaa2f23c80d04d0800000000000000
+      internalID: -3166865328568619854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_56
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 74
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656d212d684d1fab0800000000000000
+      internalID: -4975962437752531370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_57
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a88a48e785e2880800000000000000
+      internalID: -8633866135207900524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_58
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 74
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f3a915e1d809830800000000000000
+      internalID: 4075912824127897489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_59
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab2795f76c660fe0800000000000000
+      internalID: -1223171055026754650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_60
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 74
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54697a6f4ad37b2a0800000000000000
+      internalID: -6721836140105066939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_61
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9c1d1f8da400180800000000000000
+      internalID: -9151232147186398755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_62
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 74
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68520ccfb837e6100800000000000000
+      internalID: 103146886554199430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_63
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f158a929c481bf0800000000000000
+      internalID: -353448378207232227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_64
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 74
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2f68868a3355680800000000000000
+      internalID: -8767044301205605692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_65
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d98ad97eee0c5c0800000000000000
+      internalID: -4197092174159373027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_66
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 74
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084afa13294c9c580800000000000000
+      internalID: -8806291464168430464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_67
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 65
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c48e337b0032380800000000000000
+      internalID: -8997346843706241976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c50da611fb9bdb0800000000000000
+      internalID: -4775575848322311119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_69
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91a4ea431a973890800000000000000
+      internalID: -7478339248573865573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_70
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e93e4b4a261c240800000000000000
+      internalID: 4810234336557374993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_71
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6531c4c01e2f1ef00800000000000000
+      internalID: 1144462828716692310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_72
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f787946e805aa30800000000000000
+      internalID: 4225793610525212527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_73
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1750b6b1c0c258680800000000000000
+      internalID: -8753541870213462671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_74
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0847fce7e6699f0800000000000000
+      internalID: -462060420833443622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_75
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e2d3472a3ce5fe0800000000000000
+      internalID: -1198305348331688330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_76
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c2b61f77dfa88a0800000000000000
+      internalID: -6301946036958319493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_77
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6060d0ffc904f20800000000000000
+      internalID: 3404893937541187315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_78
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a5848ca708d3dd0800000000000000
+      internalID: -2504704552913577399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_79
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdd145acf3d922c0800000000000000
+      internalID: -4455797274248618573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_80
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dd17dd0fe55f130800000000000000
+      internalID: 3599887865752968480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_81
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810c8502e00d4cee0800000000000000
+      internalID: -1241638838156607464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_82
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96372e2ecaf0e210800000000000000
+      internalID: 1360362850910418588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_83
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4aff9662b835f40800000000000000
+      internalID: 5716065349166671051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_84
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da27fc1d76d9bcc0800000000000000
+      internalID: -3694686186435564841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_85
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd9ac1a8d7ecf660800000000000000
+      internalID: 7421061203613097433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_86
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 42
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff8ce760201850a0800000000000000
+      internalID: -6892741498321989641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_87
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232119b7adbc0aa70800000000000000
+      internalID: 8836286608137327154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7569ca01028bd770800000000000000
+      internalID: 8636639651400607103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_89
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60a414ee9ea41800800000000000000
+      internalID: 582282249292259438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_90
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2031672f5040dc0e0800000000000000
+      internalID: -2248136215398837502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_91
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10498616feffe8880800000000000000
+      internalID: -8606660434261928959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_92
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49b350dc351506c0800000000000000
+      internalID: -4177909728378898097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_93
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d554e4b42bae9990800000000000000
+      internalID: -7377270965444258349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_94
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f28dd8b27cdf230800000000000000
+      internalID: 3674311860881469200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_95
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dae9b43c0fc6de10800000000000000
+      internalID: 2222191117485075154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_96
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef18314c3b8592180800000000000000
+      internalID: -9139676439659707906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_97
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9943de216bb1a2200800000000000000
+      internalID: 155967605913236633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_98
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68a549fcadba7920800000000000000
+      internalID: 2988909853327861871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_99
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983f1cdbbbbb8cd20800000000000000
+      internalID: 3299093142065771401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_100
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740cde82da1bd9670800000000000000
+      internalID: 8547183025093197895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_101
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa871ccf633c30fc0800000000000000
+      internalID: -3529763041992148817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_102
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043d162ad30e047e0800000000000000
+      internalID: -1783178897116769472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_103
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc481f9a47d8c8360800000000000000
+      internalID: 7173263838701257931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_104
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a01df1fb46a4c90800000000000000
+      internalID: -7184819483480880605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_105
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55b873bb4afbbbe0800000000000000
+      internalID: -1460298451111070369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_106
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491954995deae3570800000000000000
+      internalID: 8448382183416369556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextpage_ss_107
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203fd296fd9205a30800000000000000
+      internalID: 4201904491855737602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nextpage_ss_0: 1020529116145130889
+      nextpage_ss_1: 5640545624955603300
+      nextpage_ss_10: -7890271181868966264
+      nextpage_ss_100: 8547183025093197895
+      nextpage_ss_101: -3529763041992148817
+      nextpage_ss_102: -1783178897116769472
+      nextpage_ss_103: 7173263838701257931
+      nextpage_ss_104: -7184819483480880605
+      nextpage_ss_105: -1460298451111070369
+      nextpage_ss_106: 8448382183416369556
+      nextpage_ss_107: 4201904491855737602
+      nextpage_ss_11: 5707914367268369250
+      nextpage_ss_12: -4084196405922575108
+      nextpage_ss_13: -5652428968802795832
+      nextpage_ss_14: -3859659733326722056
+      nextpage_ss_15: 6021681124224715259
+      nextpage_ss_16: 1708117579259428179
+      nextpage_ss_17: -8219923287428723592
+      nextpage_ss_18: 7810172182118680368
+      nextpage_ss_19: 4828085240306216800
+      nextpage_ss_2: -4765671275293013015
+      nextpage_ss_20: 8864922697924186743
+      nextpage_ss_21: 7116270042043860703
+      nextpage_ss_22: -5268852037807385105
+      nextpage_ss_23: -6005945505767403084
+      nextpage_ss_24: 1527164343337314011
+      nextpage_ss_25: 8914867341438311731
+      nextpage_ss_26: 9133096321463018949
+      nextpage_ss_27: 1275914508690017783
+      nextpage_ss_28: -4442272508496336299
+      nextpage_ss_29: 3051967379622833955
+      nextpage_ss_3: -699406603824745746
+      nextpage_ss_30: -5822811056964772271
+      nextpage_ss_31: 3443942753490652473
+      nextpage_ss_32: -1337147563216872134
+      nextpage_ss_33: -3886107400489976271
+      nextpage_ss_34: -8589102323757752889
+      nextpage_ss_35: 1338863690640357003
+      nextpage_ss_36: -3020597035298275048
+      nextpage_ss_37: -8319123763411610956
+      nextpage_ss_38: 6989997647680925983
+      nextpage_ss_39: 3885243315831886878
+      nextpage_ss_4: -8557041976464779095
+      nextpage_ss_40: 8966200532159966768
+      nextpage_ss_41: -977771545907726249
+      nextpage_ss_42: 3080462801356079054
+      nextpage_ss_43: -317717036912832
+      nextpage_ss_44: 3790173473406469319
+      nextpage_ss_45: -1275748746911091720
+      nextpage_ss_46: 3079457145804268986
+      nextpage_ss_47: 8998564640535927688
+      nextpage_ss_48: -3311820649406490348
+      nextpage_ss_49: 3832127622583745319
+      nextpage_ss_5: 6817549011372553136
+      nextpage_ss_50: -4190601171661356949
+      nextpage_ss_51: -5548840943146291810
+      nextpage_ss_52: -4665594696324269028
+      nextpage_ss_53: 4585660662991515850
+      nextpage_ss_54: -5449007094060945759
+      nextpage_ss_55: -3166865328568619854
+      nextpage_ss_56: -4975962437752531370
+      nextpage_ss_57: -8633866135207900524
+      nextpage_ss_58: 4075912824127897489
+      nextpage_ss_59: -1223171055026754650
+      nextpage_ss_6: 9019465147793701666
+      nextpage_ss_60: -6721836140105066939
+      nextpage_ss_61: -9151232147186398755
+      nextpage_ss_62: 103146886554199430
+      nextpage_ss_63: -353448378207232227
+      nextpage_ss_64: -8767044301205605692
+      nextpage_ss_65: -4197092174159373027
+      nextpage_ss_66: -8806291464168430464
+      nextpage_ss_67: -8997346843706241976
+      nextpage_ss_68: -4775575848322311119
+      nextpage_ss_69: -7478339248573865573
+      nextpage_ss_7: -7797685022818382030
+      nextpage_ss_70: 4810234336557374993
+      nextpage_ss_71: 1144462828716692310
+      nextpage_ss_72: 4225793610525212527
+      nextpage_ss_73: -8753541870213462671
+      nextpage_ss_74: -462060420833443622
+      nextpage_ss_75: -1198305348331688330
+      nextpage_ss_76: -6301946036958319493
+      nextpage_ss_77: 3404893937541187315
+      nextpage_ss_78: -2504704552913577399
+      nextpage_ss_79: -4455797274248618573
+      nextpage_ss_8: -9187970712084082189
+      nextpage_ss_80: 3599887865752968480
+      nextpage_ss_81: -1241638838156607464
+      nextpage_ss_82: 1360362850910418588
+      nextpage_ss_83: 5716065349166671051
+      nextpage_ss_84: -3694686186435564841
+      nextpage_ss_85: 7421061203613097433
+      nextpage_ss_86: -6892741498321989641
+      nextpage_ss_87: 8836286608137327154
+      nextpage_ss_88: 8636639651400607103
+      nextpage_ss_89: 582282249292259438
+      nextpage_ss_9: -262960059423136400
+      nextpage_ss_90: -2248136215398837502
+      nextpage_ss_91: -8606660434261928959
+      nextpage_ss_92: -4177909728378898097
+      nextpage_ss_93: -7377270965444258349
+      nextpage_ss_94: 3674311860881469200
+      nextpage_ss_95: 2222191117485075154
+      nextpage_ss_96: -9139676439659707906
+      nextpage_ss_97: 155967605913236633
+      nextpage_ss_98: 2988909853327861871
+      nextpage_ss_99: 3299093142065771401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
