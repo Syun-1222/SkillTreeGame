@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673f32dae66fca848b40273d0f8702c5, type: 3}
+  m_Name: Speed2
+  m_EditorClassIdentifier: 
+  id: 4
+  skillName: Speed2
+  description: 
+  icon: {fileID: -2678255000994483294, guid: 5ed0cd87767f47a4eabaa9f7581cf575, type: 3}
+  requires:
+  - {fileID: 11400000, guid: 3f702bdb36d70b74a870b8c670774e76, type: 2}
+  cost: 1
