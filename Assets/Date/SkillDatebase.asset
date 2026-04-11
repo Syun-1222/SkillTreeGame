@@ -16,12 +16,35 @@ MonoBehaviour:
   - skill: {fileID: 11400000, guid: e5cf433076a469943b920591bd84517d, type: 2}
     position: {x: 0, y: 0}
     iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
   - skill: {fileID: 11400000, guid: 3e41416241aec3f4ba12c236aa24d108, type: 2}
     position: {x: 110, y: -110}
-    iconOffset: {x: 5, y: 10}
-  - skill: {fileID: 11400000, guid: 9123e4b8fbf5c4f448459f26eb400506, type: 2}
-    position: {x: 0, y: 110}
-    iconOffset: {x: 10, y: 0}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
   - skill: {fileID: 11400000, guid: 3f702bdb36d70b74a870b8c670774e76, type: 2}
     position: {x: 110, y: 0}
     iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 8836d77936eb8b743b8fe1d17494aac3, type: 2}
+    position: {x: 220, y: 0}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 8836d77936eb8b743b8fe1d17494aac3, type: 2}
+    position: {x: 220, y: 0}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 273d6afd0ee24d74fad08d1f1c30611c, type: 2}
+    position: {x: 0, y: 110}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 9123e4b8fbf5c4f448459f26eb400506, type: 2}
+    position: {x: 0, y: 110}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0

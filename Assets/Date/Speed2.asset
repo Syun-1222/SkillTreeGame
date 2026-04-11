@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 4
   skillName: Speed2
   description: 
-  icon: {fileID: -2678255000994483294, guid: 5ed0cd87767f47a4eabaa9f7581cf575, type: 3}
+  icon: {fileID: 6844117957397499228, guid: 584bdfa5f5f0c14408ec0c15bc0e5100, type: 3}
   requires:
   - {fileID: 11400000, guid: 3f702bdb36d70b74a870b8c670774e76, type: 2}
   cost: 1

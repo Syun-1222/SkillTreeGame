@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 3
   skillName: Speed
   description: 
-  icon: {fileID: -2678255000994483294, guid: 5ed0cd87767f47a4eabaa9f7581cf575, type: 3}
+  icon: {fileID: -1443463485514815339, guid: 57c780a1f2ca2ec4581d1e6a8917c5b0, type: 3}
   requires:
   - {fileID: 11400000, guid: e5cf433076a469943b920591bd84517d, type: 2}
   cost: 1
