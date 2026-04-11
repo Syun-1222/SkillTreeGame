@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 673f32dae66fca848b40273d0f8702c5, type: 3}
-  m_Name: Attack
+  m_Name: Attack2
   m_EditorClassIdentifier: 
-  id: 1
-  skillName: Attack
+  id: 5
+  skillName: Attack2
   description: 
   icon: {fileID: -4423657666877967501, guid: 841c52c549d257f49ad4b6ff1c0359b3, type: 3}
   requires:
-  - {fileID: 11400000, guid: e5cf433076a469943b920591bd84517d, type: 2}
+  - {fileID: 11400000, guid: 3e41416241aec3f4ba12c236aa24d108, type: 2}
   cost: 1
