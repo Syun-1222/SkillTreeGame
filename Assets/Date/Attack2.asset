@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 5
   skillName: Attack2
   description: 
-  icon: {fileID: -4423657666877967501, guid: 841c52c549d257f49ad4b6ff1c0359b3, type: 3}
+  icon: {fileID: 6881134799573315757, guid: 4429f7ca075721349ba6b4d5ea7429a6, type: 3}
   requires:
   - {fileID: 11400000, guid: 3e41416241aec3f4ba12c236aa24d108, type: 2}
   cost: 1

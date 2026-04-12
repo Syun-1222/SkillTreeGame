@@ -17,5 +17,5 @@ MonoBehaviour:
   description: 
   icon: {fileID: -2678255000994483294, guid: aed8b907a301b5b4e8eef0d5a6e08f23, type: 3}
   requires:
-  - {fileID: 11400000, guid: e5cf433076a469943b920591bd84517d, type: 2}
+  - {fileID: 11400000, guid: 9123e4b8fbf5c4f448459f26eb400506, type: 2}
   cost: 1
