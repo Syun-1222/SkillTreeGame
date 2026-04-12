@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673f32dae66fca848b40273d0f8702c5, type: 3}
   m_Name: Defense
   m_EditorClassIdentifier: 
-  id: 3
-  skillName: Defense2
+  id: 2
+  skillName: Defense
   description: 
   icon: {fileID: -2678255000994483294, guid: aed8b907a301b5b4e8eef0d5a6e08f23, type: 3}
   requires:
