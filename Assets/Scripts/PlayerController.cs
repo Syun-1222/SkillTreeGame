@@ -10,13 +10,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+
     private float moveInput;
     private bool isGrounded;
     private bool wasGrounded;
+    private bool isAttacking;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -32,6 +38,7 @@ public class PlayerController : MonoBehaviour
         if (currentGrounded && !wasGrounded)
         {
             Debug.Log("地面接触");
+            animator.SetTrigger("Land");
         }
         if (!currentGrounded && wasGrounded)
         {
@@ -46,6 +53,11 @@ public class PlayerController : MonoBehaviour
             moveInput = -1f;
         else if (Input.GetKey(KeyCode.D))
             moveInput = 1f;
+
+        if (moveInput > 0)
+            spriteRenderer.flipX = false;
+        else if (moveInput < 0)
+            spriteRenderer.flipX = true;
 
         // ジャンプ
         if (Input.GetKeyDown(KeyCode.Space))
@@ -62,18 +74,42 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("ジャンプ不可（空中）");
             }
         }
-    }
 
-    // 移動の処理
-    private void FixedUpdate()
-    {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // 攻撃
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!isAttacking)
+            {
+                Attack();
+            }
+        }
+
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        animator.SetBool("IsGrounded", isGrounded);
     }
 
     // ジャンプの処理
     private void Jump()
     {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    }
+
+    // 攻撃
+    private void Attack()
+    {
+        Debug.Log("左クリック入力");
+        isAttacking = true;
+
+        Debug.Log("Attackアニメーション開始");
+        animator.SetTrigger("Attack");
+    }
+
+    // 攻撃終了
+    public void EndAttack()
+    {
+        Debug.Log("Attackアニメーション終了");
+        isAttacking = false;
     }
 
     // 接地面判定の範囲描画
@@ -83,5 +119,17 @@ public class PlayerController : MonoBehaviour
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
+    }
+
+    // 移動の処理
+    private void FixedUpdate()
+    {
+        if (isAttacking)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 }

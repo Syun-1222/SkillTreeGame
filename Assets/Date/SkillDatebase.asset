@@ -48,3 +48,33 @@ MonoBehaviour:
     iconOffset: {x: 0, y: 0}
     iconSize: {x: 0, y: 0}
     iconScale: 0
+  - skill: {fileID: 11400000, guid: b0165c83e4ac1dc48b208b0c474a67a3, type: 2}
+    position: {x: 330, y: -330}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 62feda51e1ae4ad4081b0c1cbe3f55aa, type: 2}
+    position: {x: 330, y: -220}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: f720256d5b04c6a49a222ac0fcd3cdf0, type: 2}
+    position: {x: -110, y: 0}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: f720256d5b04c6a49a222ac0fcd3cdf0, type: 2}
+    position: {x: -220, y: 0}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 907578b72c9b40743beee77ec35e23eb, type: 2}
+    position: {x: -110, y: 110}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
+  - skill: {fileID: 11400000, guid: 907578b72c9b40743beee77ec35e23eb, type: 2}
+    position: {x: -220, y: 220}
+    iconOffset: {x: 0, y: 0}
+    iconSize: {x: 0, y: 0}
+    iconScale: 0
