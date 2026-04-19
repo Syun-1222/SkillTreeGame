@@ -167,6 +167,12 @@ public class PlayerController : MonoBehaviour
             Debug.Log("敵にヒット");
             enemy.TakeDamage(Player.Instance.AttackPower);
         }
+
+        if (collision.CompareTag("OutZone"))
+        {
+            Debug.Log("ゲームオーバー（場外）");
+            GameManager.Instance.GameOver();
+        }
     }
 
     // --------------------
