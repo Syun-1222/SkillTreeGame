@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Game")]
+    [SerializeField] private GameManager gameManager;
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -158,6 +161,20 @@ public class PlayerController : MonoBehaviour
     // --------------------
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("OutZone"))
+        {
+            Debug.Log("ゲームオーバー（場外）");
+            GameManager.Instance.GameOver();
+            return;
+        }
+
+        if (collision.CompareTag("Finish"))
+        {
+            Debug.Log("ゲームクリア");
+            GameManager.Instance.GameClear();
+            return;
+        }
+        
         if (!hitBox.enabled) return;
 
         Enemy enemy = collision.GetComponent<Enemy>();
