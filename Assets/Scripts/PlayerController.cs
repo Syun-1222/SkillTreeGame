@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Move")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 20f;
 
+    [Header("Attack")]
+    [SerializeField] private Collider2D hitBox; 
+
+    [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
@@ -12,10 +17,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private Player player;
 
     private float moveInput;
     private bool isGrounded;
-    private bool wasGrounded;
     private bool isAttacking;
 
     private void Awake()
@@ -23,43 +28,44 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        player = GetComponent<Player>();
+
+        hitBox.enabled = false;
     }
 
     private void Update()
     {
-        // 接地判定（1回だけ）
-        bool currentGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundRadius,
-            groundLayer
-        );
-        isGrounded = currentGrounded;
+        GroundCheck();
+        HandleInput();
+        AnimationUpdate();
+    }
 
-        if (currentGrounded && !wasGrounded)
-        {
-            Debug.Log("地面接触");
-            animator.SetTrigger("Land");
-        }
-        if (!currentGrounded && wasGrounded)
-        {
-            Debug.Log("地面離れた");
-        }
-        wasGrounded = currentGrounded;
+    private void FixedUpdate()
+    {
+        Move();
+    }
 
-        // 入力
+    // --------------------
+    // 入力
+    // --------------------
+    private void HandleInput()
+    {
+        if (isAttacking)
+        {
+            Debug.Log("入力無効（攻撃中）");
+            return;
+        }
         moveInput = 0f;
 
         if (Input.GetKey(KeyCode.A))
+        {
             moveInput = -1f;
+        }
         else if (Input.GetKey(KeyCode.D))
+        {
             moveInput = 1f;
+        }
 
-        if (moveInput > 0)
-            spriteRenderer.flipX = false;
-        else if (moveInput < 0)
-            spriteRenderer.flipX = true;
-
-        // ジャンプ
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Spaceキーが押されました");
@@ -75,61 +81,135 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // 攻撃
         if (Input.GetMouseButtonDown(0))
         {
-            if (!isAttacking)
-            {
-                Attack();
-            }
+            Debug.Log("左クリック入力");
+            Attack();
         }
 
-        animator.SetFloat("Speed", Mathf.Abs(moveInput));
-        animator.SetBool("IsGrounded", isGrounded);
+        if (moveInput > 0)
+            spriteRenderer.flipX = false;
+        else if (moveInput < 0)
+            spriteRenderer.flipX = true;
     }
 
-    // ジャンプの処理
+    // --------------------
+    // 移動
+    // --------------------
+    private void Move()
+    {
+        if (isAttacking)
+        {
+            Debug.Log("攻撃中（移動停止）");
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+    }
+
+    // --------------------
+    // ジャンプ
+    // --------------------
     private void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
+    // --------------------
     // 攻撃
+    // --------------------
     private void Attack()
     {
-        Debug.Log("左クリック入力");
+        if (isAttacking)
+        {
+            Debug.Log("攻撃入力無効");
+            return;
+        }
+
         isAttacking = true;
 
         Debug.Log("Attackアニメーション開始");
         animator.SetTrigger("Attack");
     }
 
-    // 攻撃終了
+    // --------------------
+    // HitBox制御
+    // --------------------
+    public void EnableHitBox()
+    {
+        hitBox.enabled = true;
+    }
+
+    public void DisableHitBox()
+    {
+        hitBox.enabled = false;
+    }
+
     public void EndAttack()
     {
         Debug.Log("Attackアニメーション終了");
         isAttacking = false;
     }
 
-    // 接地面判定の範囲描画
+    // --------------------
+    // 当たり判定
+    // --------------------
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!hitBox.enabled) return;
+
+        Enemy enemy = collision.GetComponent<Enemy>();
+
+        if (enemy != null)
+        {
+            Debug.Log("敵にヒット");
+            enemy.TakeDamage(Player.Instance.AttackPower);
+        }
+    }
+
+    // --------------------
+    // 地面判定
+    // --------------------
+    private void GroundCheck()
+    {
+        bool prev = isGrounded;
+
+        isGrounded = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundRadius,
+            groundLayer
+        );
+
+        if (isGrounded && !prev)
+        {
+            Debug.Log("地面接触");
+        }
+
+        if (!isGrounded && prev)
+        {
+            Debug.Log("地面離れた");
+        }
+    }
+
+    // --------------------
+    // アニメ
+    // --------------------
+    private void AnimationUpdate()
+    {
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        animator.SetBool("IsGrounded", isGrounded);
+    }
+
+    // --------------------
+    // デバッグ：接地面判定の範囲描画
+    // --------------------
     private void OnDrawGizmos()
     {
         if (groundCheck == null) return;
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
-    }
-
-    // 移動の処理
-    private void FixedUpdate()
-    {
-        if (isAttacking)
-        {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            return;
-        }
-
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 }
