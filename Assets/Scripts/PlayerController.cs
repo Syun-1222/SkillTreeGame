@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     [Header("Game")]
     [SerializeField] private GameManager gameManager;
 
+    [Header("SE")]
+    [SerializeField] private SEManager seManager;
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -217,6 +220,29 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
         animator.SetBool("IsGrounded", isGrounded);
+    }
+
+    // --------------------
+    // SE
+    // --------------------
+    public void PlayFootstepRight()
+    {
+        seManager.PlayFootstep(true);
+    }
+
+    public void PlayFootstepLeft()
+    {
+        seManager.PlayFootstep(false);
+    }
+
+    public void PlayArmor()
+    {
+        seManager.PlayArmor();
+    }
+
+    public void PlaySE(int type)
+    {
+        seManager.Play((SEType)type);
     }
 
     // --------------------
