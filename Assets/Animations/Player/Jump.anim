@@ -86,7 +86,11 @@ AnimationClip:
     floatParameter: 0
     intParameter: 3
     messageOptions: 0
+<<<<<<< Updated upstream
   - time: 0.033333335
+=======
+  - time: 0
+>>>>>>> Stashed changes
     functionName: PlayArmor
     data: 
     objectReferenceParameter: {fileID: 0}
