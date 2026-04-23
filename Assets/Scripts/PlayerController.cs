@@ -26,8 +26,10 @@ public class PlayerController : MonoBehaviour
     private Player player;
 
     private float moveInput;
+    private bool jumpRequest;
     private bool isGrounded;
     private bool isAttacking;
+    private bool wasGrounded;
 
     private void Awake()
     {
@@ -41,14 +43,16 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        GroundCheck();
         HandleInput();
+        HandleJump();
         AnimationUpdate();
     }
 
     private void FixedUpdate()
     {
         Move();
+        GroundCheck();
+        CheckLanding();
     }
 
     // --------------------
@@ -74,16 +78,10 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Spaceキーが押されました");
-
+            Debug.Log("ジャンプ入力");
             if (isGrounded)
             {
-                Debug.Log("ジャンプ実行");
-                Jump();
-            }
-            else
-            {
-                Debug.Log("ジャンプ不可（空中）");
+                jumpRequest = true;
             }
         }
 
@@ -97,6 +95,20 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.flipX = false;
         else if (moveInput < 0)
             spriteRenderer.flipX = true;
+    }
+
+    // ジャンプ入力された時、かつ、地面接触判定が付いている時にジャンプ実行する
+    private void HandleJump()
+    {
+        if (!isGrounded)
+        return;
+        
+        if (jumpRequest)
+        {
+            Debug.Log("ジャンプ実行");
+            Jump();
+            jumpRequest = false;
+        }
     }
 
     // --------------------
@@ -121,6 +133,8 @@ public class PlayerController : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        animator.SetTrigger("Jump");
     }
 
     // --------------------
@@ -195,22 +209,32 @@ public class PlayerController : MonoBehaviour
     private void GroundCheck()
     {
         bool prev = isGrounded;
-
+        
         isGrounded = Physics2D.OverlapCircle(
             groundCheck.position,
             groundRadius,
             groundLayer
         );
-
-        if (isGrounded && !prev)
+        if (!prev && isGrounded)
         {
-            Debug.Log("地面接触");
+            Debug.Log("[Ground] 地面に接触");
         }
 
-        if (!isGrounded && prev)
+        if (prev && !isGrounded)
         {
-            Debug.Log("地面離れた");
+            Debug.Log("[Ground] 地面から離れた");
         }
+    }
+    
+    // 着地判定
+    private void CheckLanding()
+    {
+        if (!wasGrounded && isGrounded)
+        {
+            Debug.Log("[LAND] triggered");
+            animator.SetTrigger("Land");
+        }
+        wasGrounded = isGrounded;
     }
 
     // --------------------
@@ -220,6 +244,9 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
         animator.SetBool("IsGrounded", isGrounded);
+        animator.SetFloat("VerticalVelocity", rb.linearVelocity.y);
+        bool isFalling = rb.linearVelocity.y < -0.1f && !isGrounded;
+        animator.SetBool("IsFalling", isFalling);
     }
 
     // --------------------
