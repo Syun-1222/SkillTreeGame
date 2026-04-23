@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
     public static Player Instance;
     [SerializeField] private int maxHp = 100;
-    [SerializeField] private int attackPower = 10; // Playerの攻撃力
+    [SerializeField] private int attackPower = 100; // Playerの攻撃力
 
     private int currentHp;
     public int AttackPower => attackPower;
