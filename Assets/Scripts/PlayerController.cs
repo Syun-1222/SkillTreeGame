@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Collider2D hitBox; 
 
     [Header("Ground Check")]
+    [SerializeField] private float landCooldown = 0.1f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundRadius = 0.1f;
     [SerializeField] private LayerMask groundLayer;
@@ -24,6 +25,9 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private Player player;
+
+    private bool landLocked;
+    private float landLockTime;
 
     private float moveInput;
     private bool jumpRequest;
@@ -208,19 +212,20 @@ public class PlayerController : MonoBehaviour
     // --------------------
     private void GroundCheck()
     {
-        bool prev = isGrounded;
+        wasGrounded = isGrounded;
         
         isGrounded = Physics2D.OverlapCircle(
             groundCheck.position,
             groundRadius,
             groundLayer
         );
-        if (!prev && isGrounded)
+
+        if (!wasGrounded && isGrounded)
         {
             Debug.Log("[Ground] 地面に接触");
         }
 
-        if (prev && !isGrounded)
+        if (wasGrounded && !isGrounded)
         {
             Debug.Log("[Ground] 地面から離れた");
         }
@@ -229,12 +234,19 @@ public class PlayerController : MonoBehaviour
     // 着地判定
     private void CheckLanding()
     {
-        if (!wasGrounded && isGrounded)
+        if (!wasGrounded && isGrounded && !landLocked)
         {
             Debug.Log("[LAND] triggered");
             animator.SetTrigger("Land");
+
+            landLocked = true;
+            landLockTime = Time.time;
         }
-        wasGrounded = isGrounded;
+
+        if (Time.time - landLockTime > landCooldown)
+        {
+            landLocked = false;
+        }
     }
 
     // --------------------
