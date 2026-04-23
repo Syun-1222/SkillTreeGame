@@ -7,7 +7,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce = 20f;
 
     [Header("Attack")]
-    [SerializeField] private Collider2D hitBox; 
+    [SerializeField] private AttackHitbox hitBox;
+    [SerializeField] private AttackData attack1;
+    [SerializeField] private AttackData attack2;
+    [SerializeField] private AttackData attack3;
+    [SerializeField] private AttackData dashAttack;
 
     [Header("Ground Check")]
     [SerializeField] private float landCooldown = 0.1f;
@@ -26,14 +30,15 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Player player;
 
+    private bool isGrounded;
     private bool landLocked;
+    private bool wasGrounded;
     private float landLockTime;
 
     private float moveInput;
     private bool jumpRequest;
-    private bool isGrounded;
     private bool isAttacking;
-    private bool wasGrounded;
+    
 
     private void Awake()
     {
@@ -41,8 +46,6 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         player = GetComponent<Player>();
-
-        hitBox.enabled = false;
     }
 
     private void Update()
@@ -151,24 +154,16 @@ public class PlayerController : MonoBehaviour
             Debug.Log("攻撃入力無効");
             return;
         }
-
         isAttacking = true;
 
         Debug.Log("Attackアニメーション開始");
         animator.SetTrigger("Attack");
     }
 
-    // --------------------
-    // HitBox制御
-    // --------------------
-    public void EnableHitBox()
+    public void PlayAttack1()
     {
-        hitBox.enabled = true;
-    }
-
-    public void DisableHitBox()
-    {
-        hitBox.enabled = false;
+        Debug.Log("PlayAttack1 呼ばれた");
+        hitBox.Play(attack1);
     }
 
     public void EndAttack()
@@ -194,16 +189,6 @@ public class PlayerController : MonoBehaviour
             Debug.Log("ゲームクリア");
             GameManager.Instance.GameClear();
             return;
-        }
-        
-        if (!hitBox.enabled) return;
-
-        Enemy enemy = collision.GetComponent<Enemy>();
-
-        if (enemy != null)
-        {
-            Debug.Log("敵にヒット");
-            enemy.TakeDamage(Player.Instance.AttackPower);
         }
     }
 

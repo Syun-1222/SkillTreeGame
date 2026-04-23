@@ -16,6 +16,11 @@ public class Enemy : Unit
         base.Start();
     }
 
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+    }
+
     // 敵が死亡した場合、SkillPointを渡す
     protected override void Die()
     {

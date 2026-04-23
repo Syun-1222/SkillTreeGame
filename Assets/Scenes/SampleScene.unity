@@ -164,6 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 40050606}
   - component: {fileID: 40050605}
+  - component: {fileID: 40050610}
   - component: {fileID: 40050603}
   - component: {fileID: 40050608}
   - component: {fileID: 40050607}
@@ -189,7 +190,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 21
-  hitBox: {fileID: 409576165}
+  hitBox: {fileID: 409576167}
+  attack1: {fileID: 11400000, guid: a48ef4be4e4628646b80dd126f73d382, type: 2}
+  attack2: {fileID: 11400000, guid: 11604fdb39672284f9eed078d2c7d820, type: 2}
+  attack3: {fileID: 11400000, guid: de7948d4f198836449f3144ee7c114d0, type: 2}
+  dashAttack: {fileID: 11400000, guid: 8328ef06eb63a3640b681cd9f29a7e62, type: 2}
+  landCooldown: 0.1
   groundCheck: {fileID: 605645831}
   groundRadius: 0.35
   groundLayer:
@@ -364,6 +370,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &40050610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40050602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f8ffaeeb652664c83e0a3768fdbef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  attackPower: 100
+  skillPoint: 0
 --- !u!1 &45727152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,6 +1237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409576166}
   - component: {fileID: 409576165}
+  - component: {fileID: 409576167}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
@@ -1253,7 +1275,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1268,12 +1290,24 @@ Transform:
   m_GameObject: {fileID: 409576164}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.107221395, y: 1.07, z: 0.69597673}
+  m_LocalPosition: {x: 0.107221395, y: 1.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 40050606}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &409576167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409576164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebe54b4a3471534e9cf4c3942ce8b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &417495556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2051,7 +2085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepSource: {fileID: 806955361}
   oneShotSource: {fileID: 806955362}
-  armorVolume: 6.2
+  armorVolume: 15
   armorClips:
   - {fileID: 8300000, guid: 9c2e1669bdda87e4d8a70d73936f5d44, type: 3}
   - {fileID: 8300000, guid: 8701a12c2da1d2849a242a13d7c44ce7, type: 3}
@@ -2073,8 +2107,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cf3174f518070814082b12f2b2741266, type: 3}
   - {fileID: 8300000, guid: 539feb6cab8e1b841a382a48a36d9b63, type: 3}
   - {fileID: 8300000, guid: 958f4a5ab9402b146a5dd7f9800fcc97, type: 3}
-  jumpVolume: 40
-  jump: {fileID: 8300000, guid: dd310729612303a44b8f61a184217788, type: 3}
+  jumpVolume: 20
+  jump: {fileID: 8300000, guid: 5629e641b4ad2d34bb0e380c4c5f9244, type: 3}
   landVolume: 40
   land: {fileID: 8300000, guid: 19a30200589813c48a2e0df19f950f60, type: 3}
   attackVolume: 40
@@ -2092,7 +2126,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.226
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2189,7 +2223,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
