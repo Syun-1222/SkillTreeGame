@@ -13,6 +13,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AttackData attack3;
     [SerializeField] private AttackData dashAttack;
 
+    [Header("Sliding")]
+    [SerializeField] private float slideTime = 0.5f;
+    [SerializeField] private float slideDistance = 10f;
+    [SerializeField] private float slideInputLockTime = 0.5f;
+
+    [Header("AirDash")]
+    [SerializeField] private float airDashTime = 0.3f;
+    [SerializeField] private float airDashDistance = 10f;
+    [SerializeField] private float airDashInputLockTime = 0.5f;
+
     [Header("Ground Check")]
     [SerializeField] private float landCooldown = 0.1f;
     [SerializeField] private Transform groundCheck;
@@ -30,15 +40,31 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Player player;
 
-    private bool isGrounded;
-    private bool landLocked;
-    private bool wasGrounded;
-    private float landLockTime;
+    private bool isGrounded;        // 地面判定：現在地面に接地しているか
+    private bool landLocked;        // 着地ロック
+    private bool wasGrounded;       // 前フレームの地面状態
+    private float landLockTime;     // 着地ロックの解除
 
-    private float moveInput;
-    private bool jumpRequest;
-    private bool isAttacking;
-    
+    private float moveInput;        // 移動入力値
+    private bool jumpRequest;       // ジャンプ入力の一時保持
+    private bool isAttacking;       // 攻撃中の制御
+
+    private bool isSliding;         // スライディングの制御
+    private int slideDir;           // スライディング方向
+    private Vector2 slideStartPos;  // スライディング方向
+    private Vector2 slideTargetPos; // スライディング終了位置 
+    private float slideElapsed;     // スライディング経過時間
+    private float slideTimer;       // スライディングタイマー
+    private float slideInputLockTimer;// スライディング中の入力受付 
+
+    private bool isAirDashing;      // 空中ダッシュ中の制御
+    private bool airDashUsed;       // 空中ダッシュの使用制限
+    private Vector2 airDashStartPos;// 空中ダッシュの方向
+    private Vector2 airDashTargetPos;// 空中ダッシュの終了位置
+    private float airDashElapsed;   //　空中ダッシュ経過時間
+    private bool canAirDash = true; // 空中ダッシュを使用可能判定 
+    private float airDashTimer;     // 空中ダッシュタイマー
+    private float airDashInputLockTimer;//スライディング中の入力受付
 
     private void Awake()
     {
@@ -53,6 +79,12 @@ public class PlayerController : MonoBehaviour
         HandleInput();
         HandleJump();
         AnimationUpdate();
+
+        if (slideInputLockTimer > 0f)
+            slideInputLockTimer -= Time.deltaTime;
+
+        if (airDashInputLockTimer > 0f)
+            airDashInputLockTimer -= Time.deltaTime;
     }
 
     private void FixedUpdate()
@@ -60,6 +92,60 @@ public class PlayerController : MonoBehaviour
         Move();
         GroundCheck();
         CheckLanding();
+
+        // スライディングでキャラを滑らせる処理
+        if (isSliding)
+        {
+            slideTimer -= Time.fixedDeltaTime;
+            slideElapsed += Time.fixedDeltaTime;
+
+            float t = slideElapsed / slideTime;
+
+            Vector2 newPos = Vector2.Lerp(slideStartPos, slideTargetPos, t);
+            rb.MovePosition(newPos);
+
+            float movedDistance = Vector2.Distance(slideStartPos, newPos);
+
+            Debug.Log($"start:{slideStartPos} target:{slideTargetPos} current:{rb.position}");
+            Debug.Log($"[Slide] 移動距離: {movedDistance:F3}");
+            if (slideInputLockTimer > 0f)
+            {
+                slideInputLockTimer -= Time.deltaTime;
+            }
+
+            if (movedDistance >= slideDistance || slideTimer <= 0f)
+            {
+                isSliding = false;
+            }
+        }
+
+        // 空中ダッシュでキャラを滑らせる処理
+        if (isAirDashing)
+        {
+            airDashTimer -= Time.fixedDeltaTime;
+            airDashElapsed += Time.fixedDeltaTime;
+
+            float t = airDashElapsed / airDashTime;
+
+            Vector2 newPos = Vector2.Lerp(airDashStartPos, airDashTargetPos, t);
+            rb.MovePosition(newPos);
+
+            float movedDistance = Vector2.Distance(airDashStartPos, newPos);
+
+            Debug.Log($"start:{airDashStartPos} target:{airDashTargetPos} current:{rb.position}");
+            Debug.Log($"[AirDash] 移動距離: {movedDistance:F3}");
+
+            rb.linearVelocity = Vector2.zero;
+            if (airDashInputLockTimer > 0f)
+            {
+                airDashInputLockTimer -= Time.deltaTime;
+            }
+
+            if (movedDistance >= 10f || airDashTimer <= 0f)
+            {
+                isAirDashing = false;
+            }
+        }
     }
 
     // --------------------
@@ -72,24 +158,35 @@ public class PlayerController : MonoBehaviour
             Debug.Log("入力無効（攻撃中）");
             return;
         }
-        moveInput = 0f;
-
-        if (Input.GetKey(KeyCode.A))
+        if (slideInputLockTimer > 0f || airDashInputLockTimer > 0f)
         {
-            moveInput = -1f;
+            moveInput = 0f;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else
         {
-            moveInput = 1f;
+            moveInput = 0f;
+
+            if (Input.GetKey(KeyCode.A))
+                moveInput = -1f;
+            else if (Input.GetKey(KeyCode.D))
+                moveInput = 1f;
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("ジャンプ入力");
+
+            if (slideInputLockTimer > 0f || airDashInputLockTimer > 0f)
+                return;
+
             if (isGrounded)
-            {
                 jumpRequest = true;
-            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Debug.Log("Shift入力");
+            HandleShift();
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -108,13 +205,46 @@ public class PlayerController : MonoBehaviour
     private void HandleJump()
     {
         if (!isGrounded)
-        return;
-        
+            return;
+
+        if (isSliding) 
+            return;
+
+        if (isAirDashing)
+            return;
+
+        if (isAttacking)
+            return;
+
         if (jumpRequest)
         {
             Debug.Log("ジャンプ実行");
             Jump();
             jumpRequest = false;
+        }
+    }
+
+    // Shiftを押すとスライディングor空中ダッシュ
+    private void HandleShift()
+    {
+        if (landLocked)
+            return;
+
+        if (isAttacking || isSliding || isAirDashing)
+            return;
+
+        // スライディング
+        if (isGrounded && Mathf.Abs(moveInput) > 0.1f)
+        {
+            Debug.Log("スライディング実行");
+            StartSliding();
+        }
+        // 空中ダッシュ
+        else if (!isGrounded && canAirDash && !airDashUsed)
+        {
+            Debug.Log("空中ダッシュ実行");
+            airDashUsed = true;
+            StartAirDash();
         }
     }
 
@@ -130,6 +260,11 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        if (isSliding || isAirDashing)
+        {
+            return;
+        }
+
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 
@@ -142,6 +277,50 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
         animator.SetTrigger("Jump");
+    }
+
+    // --------------------
+    // スライディング
+    // --------------------
+    private void StartSliding()
+    {
+        isSliding = true;
+        slideTimer = slideTime;
+        slideElapsed = 0f;
+        slideStartPos = rb.position;
+
+        slideDir = spriteRenderer.flipX ? -1 : 1;
+        slideTargetPos = slideStartPos + new Vector2(slideDir * slideDistance, 0f);
+        slideInputLockTimer = slideInputLockTime;
+        jumpRequest = false;
+
+        animator.SetTrigger("slid");
+    }
+
+    // --------------------
+    // 空中ダッシュ
+    // --------------------
+    private void StartAirDash()
+    {
+        isAirDashing = true;
+        canAirDash = false;
+        airDashTimer = airDashTime;
+        airDashElapsed = 0f;
+        airDashStartPos = rb.position;
+
+        int dir = spriteRenderer.flipX ? -1 : 1;
+        airDashTargetPos = airDashStartPos + new Vector2(dir * airDashDistance, 0f);
+        rb.linearVelocity = Vector2.zero; 
+        airDashInputLockTimer = airDashInputLockTime;
+        jumpRequest = false;
+
+        animator.SetTrigger("airdash");
+    }
+
+    public void EndAirDash()
+    {
+        Debug.Log("AirDashアニメーション終了");
+        isAirDashing = false;
     }
 
     // --------------------
@@ -213,6 +392,13 @@ public class PlayerController : MonoBehaviour
         if (wasGrounded && !isGrounded)
         {
             Debug.Log("[Ground] 地面から離れた");
+        }
+
+        if (!wasGrounded && isGrounded)
+        {
+            Debug.Log("着地した瞬間");
+            canAirDash = true;
+            airDashUsed = false;
         }
     }
     
