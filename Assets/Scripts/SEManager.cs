@@ -19,9 +19,13 @@ public class SEManager : MonoBehaviour
     [SerializeField] private AudioClip jump;
     [Range(0, 100)] [SerializeField] private float landVolume = 100f;
     [SerializeField] private AudioClip land;
+    [Range(0, 100)] [SerializeField] private float slidVolume = 100f;
+    [SerializeField] private AudioClip slid;
+    [Range(0, 100)] [SerializeField] private float airdashVolume = 100f;
+    [SerializeField] private AudioClip airdash;
     [Range(0, 100)] [SerializeField] private float attackVolume = 100f;
     [SerializeField] private AudioClip attack;
-    
+
     /* 鳴っている回数を数える
     private int armorCount;
     private int runCount;
@@ -67,6 +71,14 @@ public class SEManager : MonoBehaviour
 
             case SEType.Land:
                 oneShotSource.PlayOneShot(land, landVolume / 100f);
+                break;
+                
+            case SEType.Slid:
+                oneShotSource.PlayOneShot(slid, slidVolume / 100f);
+                break;
+
+            case SEType.AirDash:
+                oneShotSource.PlayOneShot(airdash, airdashVolume / 100f);
                 break;
 
             case SEType.Attack:
