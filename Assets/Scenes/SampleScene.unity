@@ -192,15 +192,13 @@ MonoBehaviour:
   jumpForce: 21
   hitBox: {fileID: 409576167}
   attack1: {fileID: 11400000, guid: a48ef4be4e4628646b80dd126f73d382, type: 2}
+  attack1Motion: {fileID: 0}
   attack2: {fileID: 0}
   attack3: {fileID: 0}
   dashAttack: {fileID: 0}
-  slideTime: 0.5
-  slideDistance: 7
-  slideInputLockTime: 0.5
-  airDashTime: 0.3
-  airDashDistance: 7
-  airDashInputLockTime: 0.5
+  slidMotion: {fileID: 11400000, guid: 659b25b06ddc53c49a101b39cbc4839c, type: 2}
+  airDashMotion: {fileID: 11400000, guid: 14636b6fb4a717b4cb1209341995c7bf, type: 2}
+  backStepMotion: {fileID: 11400000, guid: 7dec40ad4552ba348866a50c88addfde, type: 2}
   landCooldown: 0.1
   groundCheck: {fileID: 605645831}
   groundRadius: 0.35
@@ -1537,7 +1535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &536272640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,12 +1558,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3d034c342b56bb14ba3df9742c623fc0, type: 3}
-  m_Resource: {fileID: 8300000, guid: 3d034c342b56bb14ba3df9742c623fc0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: af104e994e9715a4a967ca4ef3761e73, type: 3}
+  m_Resource: {fileID: 8300000, guid: af104e994e9715a4a967ca4ef3761e73, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.125
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2091,7 +2089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepSource: {fileID: 806955361}
   oneShotSource: {fileID: 806955362}
-  armorVolume: 10
+  armorVolume: 20
   armorClips:
   - {fileID: 8300000, guid: 9c2e1669bdda87e4d8a70d73936f5d44, type: 3}
   - {fileID: 8300000, guid: 8701a12c2da1d2849a242a13d7c44ce7, type: 3}
@@ -2116,10 +2114,12 @@ MonoBehaviour:
   jump: {fileID: 8300000, guid: 5629e641b4ad2d34bb0e380c4c5f9244, type: 3}
   landVolume: 40
   land: {fileID: 8300000, guid: 19a30200589813c48a2e0df19f950f60, type: 3}
-  slidVolume: 100
-  slid: {fileID: 0}
-  airdashVolume: 100
-  airdash: {fileID: 0}
+  slidVolume: 40
+  slid: {fileID: 8300000, guid: 5629e641b4ad2d34bb0e380c4c5f9244, type: 3}
+  airdashVolume: 40
+  airdash: {fileID: 8300000, guid: dd310729612303a44b8f61a184217788, type: 3}
+  backStepVolume: 40
+  backStep: {fileID: 8300000, guid: 19a30200589813c48a2e0df19f950f60, type: 3}
   attackVolume: 40
   attack: {fileID: 8300000, guid: f2dba2c7a9ef1be458236c44f7ed4f4d, type: 3}
 --- !u!82 &806955361
@@ -28478,6 +28478,7 @@ GameObject:
   - component: {fileID: 1503514842}
   - component: {fileID: 1503514841}
   - component: {fileID: 1503514840}
+  - component: {fileID: 1503514844}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -28570,6 +28571,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1503514844
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503514839}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b5cd021864cad6409f5ff2dd5b9c032, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1575915938
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,5 +6,6 @@ public enum SEType
     Land = 3,
     Slid = 4,
     AirDash = 5,
-    Attack = 6
+    BackStep = 6,
+    Attack = 7
 }

@@ -23,6 +23,8 @@ public class SEManager : MonoBehaviour
     [SerializeField] private AudioClip slid;
     [Range(0, 100)] [SerializeField] private float airdashVolume = 100f;
     [SerializeField] private AudioClip airdash;
+    [Range(0, 100)] [SerializeField] private float backStepVolume = 100f;
+    [SerializeField] private AudioClip backStep;
     [Range(0, 100)] [SerializeField] private float attackVolume = 100f;
     [SerializeField] private AudioClip attack;
 
@@ -81,9 +83,18 @@ public class SEManager : MonoBehaviour
                 oneShotSource.PlayOneShot(airdash, airdashVolume / 100f);
                 break;
 
+            case SEType.BackStep:
+                oneShotSource.PlayOneShot(backStep, backStepVolume / 100f);
+                break;
+
             case SEType.Attack:
                 oneShotSource.PlayOneShot(attack, attackVolume / 100f);
                 break;
         }
+    }
+    
+    public void Stop(SEType type)
+    {
+        oneShotSource.Stop();
     }
 }
